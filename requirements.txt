@@ -2,7 +2,4 @@ pywebio
 sweetviz
 flask
 pandas
-
-re
-argparse
 nest_asyncio
