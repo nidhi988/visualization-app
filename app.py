@@ -53,7 +53,7 @@ def content_pandas(content: list):
     
 app.add_url_rule('/hello','webio_view',webio_view(apps),methods=['GET','POST','OPTIONS'])
 
-app.run(host='localhost',port=80)
+app.run(host='localhost',port=36535)
     
 #start_server(app,port=36535,debug=True)
 
