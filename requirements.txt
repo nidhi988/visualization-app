@@ -3,4 +3,4 @@ sweetviz
 flask
 pandas
 nest_asyncio
-os
+
