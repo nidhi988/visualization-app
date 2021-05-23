@@ -47,15 +47,20 @@ def content_pandas(content: list):
             writer.writerow(re.split('\st',line))
         return pd.read_csv("tmp.csv")
 
-#if __name__ == '__main__':
-    #parser = argparse.ArgumentParser()
-    #parser.add_argument("-p", "--port", type=int, default=8080)
-    #args = parser.parse_args()
-    
+
 app.add_url_rule('/hello','webio_view',webio_view(apps),methods=['GET','POST','OPTIONS'])
 
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--port", type=int, default=8080)
+    args = parser.parse_args()
+    
+    start_server(apps,port=args.port)
+
+
 #app.run(host='localhost',port=36535)
-app.run(host='localhost',port=os.environ.get('PORT', '5000'))
+#or
+#app.run(host='localhost',port=os.environ.get('PORT', '5000'))
     
 #start_server(app,port=36535,debug=True)
 
