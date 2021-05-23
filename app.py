@@ -55,7 +55,7 @@ def content_pandas(content: list):
 app.add_url_rule('/hello','webio_view',webio_view(apps),methods=['GET','POST','OPTIONS'])
 
 #app.run(host='localhost',port=36535)
-app.run(host='localhost',port=os.environ.get('PORT', '5000'))
+app.run(host='localhost',port=os.environ.get('PORT', '59500'))
     
 #start_server(app,port=36535,debug=True)
 
