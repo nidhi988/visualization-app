@@ -1,2 +1,8 @@
 pywebio
 sweetviz
+flask
+pandas
+csv
+re
+argparse
+nest_asyncio
